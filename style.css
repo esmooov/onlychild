@@ -1,0 +1,159 @@
+#bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #D2D0FF;
+  perspective: 30px;
+  overflow: hidden;
+  perspective-origin: 48% 50%;
+}
+#buy {
+  position: absolute;
+  color: white;
+  top: 20px;
+  padding: 6px;
+  background-color: black;
+  font-family: dharma-gothic-c, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  white-space: nowrap;
+}
+#buy1{
+  display: block;
+  color: white;
+  font-size: 60px;
+  text-decoration: none;
+  animation: 20s infinite normal marqueeleft;
+  animation-timing-function: linear;
+}
+#buy2{
+  display: block;
+  color: white;
+  margin-left:-1320px;
+  font-size: 60px;
+  text-decoration: none;
+  animation: 20s infinite normal marqueeright;
+  animation-timing-function: linear;
+}
+#buy a .bold{
+  font-style: normal;
+  font-weight: 900;
+}
+#buy:hover a .highlight{
+  color: #8CFF81;
+}
+#player{
+  width: 560px;
+  height: 120px;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  border: 10px solid black;
+}
+#contact{
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  font-family: owners-xxwide, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  background-color: white;
+  padding: 30px 20px 10px 20px;
+}
+#contact a{
+  color: black;
+  font-size: 60px;
+  text-decoration: none;
+  line-height:28px;
+}
+#contact .addy{
+  font-size: 28.2px;
+  font-family: owners-xxwide, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.column {
+  position: absolute;
+  transition: width 0.2s, height 0.2s, left 0.2s, top 0.2s;
+}
+.logo{
+  position: absolute;
+  width: 60vw;
+  left: 20vw;
+  top: 15vw;
+  filter: drop-shadow(30px 10px 10px rgba(255,255,255,0.4));
+}
+#sky{
+  background: #A9FAFF;
+  position: absolute;
+  width: 100%;
+  height: 46%;
+  pointer-events: none;
+}
+.wall1 {
+    animation: 0.2s infinite normal zoom1;
+    position: absolute;
+    top: 0;
+    left: -600px;
+    animation-timing-function: linear;
+    background-image: url('wall-bg.png');
+    height: 4000px;
+    width: 720px;
+    pointer-events: none;
+    transform: translateZ(680px) rotateX(30deg) rotateY(50deg) translateY(-1000px);
+}
+
+.wall2 {
+    animation: 0.3s infinite normal zoom2;
+    position: absolute;
+    top: 0;
+    left: 1400px;
+    animation-timing-function: linear;
+    background-image: url('wall-bg.png');
+    height: 4000px;
+    width: 720px;
+    pointer-events: none;
+    transform: translateZ(680px) rotateX(30deg) rotateY(-50deg) translateY(-1000px);
+}
+
+@keyframes zoom1 {
+  from {
+    transform: translateZ(680px) rotateX(30deg) rotateY(50deg) translateY(-2000px);
+  }
+
+  to {
+    transform: translateZ(680px) rotateX(30deg) rotateY(50deg) translateY(-2270px);
+  }
+}
+
+@keyframes zoom2 {
+  from {
+    transform: translateZ(680px) rotateX(30deg) rotateY(-50deg) translateY(-2000px);
+  }
+
+  to {
+    transform: translateZ(680px) rotateX(30deg) rotateY(-50deg) translateY(-2270px);
+  }
+}
+
+@keyframes marqueeleft{
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: -1320px;
+  }
+}
+
+@keyframes marqueeright{
+  from {
+    margin-left: -1320;
+  }
+
+  to {
+    margin-left: 0px;
+  }
+}
