@@ -64,12 +64,12 @@
 }
 #contact a{
   color: black;
-  font-size: 60px;
+  font-size: 3.57vw;
   text-decoration: none;
   line-height:28px;
 }
 #contact .addy{
-  font-size: 28.2px;
+  font-size: 1.7vw;
   font-family: owners-xxwide, sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -155,5 +155,28 @@
 
   to {
     margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo{
+    top: 28vh;
+    width: 80vh;
+    left: calc(50vw - 40vh);
+  }
+  #player{
+    left: calc(50vw - 280px);
+    bottom: 180px;
+  }
+  #contact{
+    text-align: center;
+    width: 560px;
+    left: calc(50vw - 280px);
+  }
+  #contact a{
+    font-size: 40px;
+  }
+  #contact .addy{
+    font-size: 24px;
   }
 }
