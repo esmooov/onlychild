@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 #bg {
   position: absolute;
   width: 100%;
@@ -178,5 +181,33 @@
   }
   #contact .addy{
     font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .wall1, .wall2, #sky {
+    display: none;
+  }
+  #buy, .logo, #player, #contact {
+    position: static;
+  }
+  .logo, #contact, #player{
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 20px;
+    border: 0px;
+    text-align: center;
+  }
+  #bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #contact a {
+    font-size: 7vw;
+  }
+  #contact .addy{
+    font-size: 3vw;
   }
 }
