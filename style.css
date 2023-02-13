@@ -55,17 +55,19 @@ body {
 }
 
 #direct-buy {
-  background: black;
   font-family: owners-xxwide, sans-serif;
-  border: 10px solid black;
-  width: 100%;
-  display: inline;
+  width: calc(100% + 20px);
+  display: flex;
+  justify-content: space-between;
+  margin-top: -6px;
 }
 
 #direct-buy a {
+  background: black;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  border: 10px solid black;
 }
 
 #direct-buy:hover a {
