@@ -8,7 +8,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background: #D2D0FF;
+  background: rgb(156, 233, 244);
   perspective: 30px;
   overflow: hidden;
   perspective-origin: 48% 50%;
@@ -125,7 +125,8 @@ body {
 }
 
 #sky {
-  background: #A9FAFF;
+  background: #333832;
+  background-image: url('sky-bg.png');
   position: absolute;
   width: 100%;
   height: 46%;
@@ -143,6 +144,7 @@ body {
   width: 720px;
   pointer-events: none;
   transform: translateZ(680px) rotateX(30deg) rotateY(50deg) translateY(-1000px);
+  filter: grayscale(50%);
 }
 
 .wall2 {
@@ -156,6 +158,21 @@ body {
   width: 720px;
   pointer-events: none;
   transform: translateZ(680px) rotateX(30deg) rotateY(-50deg) translateY(-1000px);
+}
+
+.wall1,
+.wall2 {
+  filter: grayscale(50%) blur(3px);
+}
+
+@keyframes skyspin {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 @keyframes zoom1 {
