@@ -82,7 +82,19 @@ body {
   left: 40px;
 }
 
+#player2 {
+  width: 560px;
+  height: 120px;
+  position: absolute;
+  bottom: 270px;
+  left: 40px;
+}
+
 #player iframe {
+  border: 10px solid black !important;
+}
+
+#player2 iframe {
   border: 10px solid black !important;
 }
 
